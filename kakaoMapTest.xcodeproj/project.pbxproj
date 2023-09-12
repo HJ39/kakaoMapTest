@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0FFA482AAF440900D153E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FFA472AAF440900D153E6 /* ViewController.swift */; };
+		3B9E17FF2AAB5D1700856A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E17FE2AAB5D1700856A2C /* AppDelegate.swift */; };
+		3B9E18012AAB5D1700856A2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18002AAB5D1700856A2C /* SceneDelegate.swift */; };
+		3B9E18092AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18072AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld */; };
+		3B9E180B2AAB5D1800856A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9E180A2AAB5D1800856A2C /* Assets.xcassets */; };
+		3B9E180E2AAB5D1800856A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9E180C2AAB5D1800856A2C /* LaunchScreen.storyboard */; };
+		3B9E18192AAB5D1800856A2C /* kakaoMapTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18182AAB5D1800856A2C /* kakaoMapTestTests.swift */; };
+		3B9E18232AAB5D1800856A2C /* kakaoMapTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18222AAB5D1800856A2C /* kakaoMapTestUITests.swift */; };
+		3B9E18252AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */; };
+		3B9E18332AAB5E1B00856A2C /* KakaoMapsSDK_SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9E18322AAB5E1B00856A2C /* KakaoMapsSDK_SPM */; };
+		3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6622AB05C7300428A8C /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B9E18152AAB5D1800856A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B9E17F32AAB5D1700856A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B9E17FA2AAB5D1700856A2C;
+			remoteInfo = kakaoMapTest;
+		};
+		3B9E181F2AAB5D1800856A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B9E17F32AAB5D1700856A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B9E17FA2AAB5D1700856A2C;
+			remoteInfo = kakaoMapTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B0FFA472AAF440900D153E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B9E17FB2AAB5D1700856A2C /* kakaoMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kakaoMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9E17FE2AAB5D1700856A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B9E18002AAB5D1700856A2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B9E18082AAB5D1700856A2C /* kakaoMapTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kakaoMapTest.xcdatamodel; sourceTree = "<group>"; };
+		3B9E180A2AAB5D1800856A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B9E180D2AAB5D1800856A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B9E180F2AAB5D1800856A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9E18142AAB5D1800856A2C /* kakaoMapTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kakaoMapTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9E18182AAB5D1800856A2C /* kakaoMapTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestTests.swift; sourceTree = "<group>"; };
+		3B9E181E2AAB5D1800856A2C /* kakaoMapTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kakaoMapTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9E18222AAB5D1800856A2C /* kakaoMapTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestUITests.swift; sourceTree = "<group>"; };
+		3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BB7A6622AB05C7300428A8C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3BB7A6642AB05FA500428A8C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B9E17F82AAB5D1700856A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E18332AAB5E1B00856A2C /* KakaoMapsSDK_SPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E18112AAB5D1800856A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E181B2AAB5D1800856A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9E17F22AAB5D1700856A2C = {
+			isa = PBXGroup;
+			children = (
+				3B9E17FD2AAB5D1700856A2C /* kakaoMapTest */,
+				3B9E18172AAB5D1800856A2C /* kakaoMapTestTests */,
+				3B9E18212AAB5D1800856A2C /* kakaoMapTestUITests */,
+				3B9E17FC2AAB5D1700856A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B9E17FC2AAB5D1700856A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9E17FB2AAB5D1700856A2C /* kakaoMapTest.app */,
+				3B9E18142AAB5D1800856A2C /* kakaoMapTestTests.xctest */,
+				3B9E181E2AAB5D1800856A2C /* kakaoMapTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9E17FD2AAB5D1700856A2C /* kakaoMapTest */ = {
+			isa = PBXGroup;
+			children = (
+				3B9E17FE2AAB5D1700856A2C /* AppDelegate.swift */,
+				3B9E18002AAB5D1700856A2C /* SceneDelegate.swift */,
+				3B0FFA472AAF440900D153E6 /* ViewController.swift */,
+				3BB7A6622AB05C7300428A8C /* Extensions.swift */,
+				3B9E180A2AAB5D1800856A2C /* Assets.xcassets */,
+				3B9E180C2AAB5D1800856A2C /* LaunchScreen.storyboard */,
+				3B9E180F2AAB5D1800856A2C /* Info.plist */,
+				3BB7A6642AB05FA500428A8C /* Config.xcconfig */,
+				3B9E18072AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld */,
+			);
+			path = kakaoMapTest;
+			sourceTree = "<group>";
+		};
+		3B9E18172AAB5D1800856A2C /* kakaoMapTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B9E18182AAB5D1800856A2C /* kakaoMapTestTests.swift */,
+			);
+			path = kakaoMapTestTests;
+			sourceTree = "<group>";
+		};
+		3B9E18212AAB5D1800856A2C /* kakaoMapTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B9E18222AAB5D1800856A2C /* kakaoMapTestUITests.swift */,
+				3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */,
+			);
+			path = kakaoMapTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B9E17FA2AAB5D1700856A2C /* kakaoMapTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9E18282AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTest" */;
+			buildPhases = (
+				3B9E17F72AAB5D1700856A2C /* Sources */,
+				3B9E17F82AAB5D1700856A2C /* Frameworks */,
+				3B9E17F92AAB5D1700856A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kakaoMapTest;
+			packageProductDependencies = (
+				3B9E18322AAB5E1B00856A2C /* KakaoMapsSDK_SPM */,
+			);
+			productName = kakaoMapTest;
+			productReference = 3B9E17FB2AAB5D1700856A2C /* kakaoMapTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B9E18132AAB5D1800856A2C /* kakaoMapTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9E182B2AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTestTests" */;
+			buildPhases = (
+				3B9E18102AAB5D1800856A2C /* Sources */,
+				3B9E18112AAB5D1800856A2C /* Frameworks */,
+				3B9E18122AAB5D1800856A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B9E18162AAB5D1800856A2C /* PBXTargetDependency */,
+			);
+			name = kakaoMapTestTests;
+			productName = kakaoMapTestTests;
+			productReference = 3B9E18142AAB5D1800856A2C /* kakaoMapTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B9E181D2AAB5D1800856A2C /* kakaoMapTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9E182E2AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTestUITests" */;
+			buildPhases = (
+				3B9E181A2AAB5D1800856A2C /* Sources */,
+				3B9E181B2AAB5D1800856A2C /* Frameworks */,
+				3B9E181C2AAB5D1800856A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B9E18202AAB5D1800856A2C /* PBXTargetDependency */,
+			);
+			name = kakaoMapTestUITests;
+			productName = kakaoMapTestUITests;
+			productReference = 3B9E181E2AAB5D1800856A2C /* kakaoMapTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B9E17F32AAB5D1700856A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3B9E17FA2AAB5D1700856A2C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3B9E18132AAB5D1800856A2C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3B9E17FA2AAB5D1700856A2C;
+					};
+					3B9E181D2AAB5D1800856A2C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3B9E17FA2AAB5D1700856A2C;
+					};
+				};
+			};
+			buildConfigurationList = 3B9E17F62AAB5D1700856A2C /* Build configuration list for PBXProject "kakaoMapTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B9E17F22AAB5D1700856A2C;
+			packageReferences = (
+				3B9E18312AAB5E1B00856A2C /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
+			);
+			productRefGroup = 3B9E17FC2AAB5D1700856A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B9E17FA2AAB5D1700856A2C /* kakaoMapTest */,
+				3B9E18132AAB5D1800856A2C /* kakaoMapTestTests */,
+				3B9E181D2AAB5D1800856A2C /* kakaoMapTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B9E17F92AAB5D1700856A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E180E2AAB5D1800856A2C /* LaunchScreen.storyboard in Resources */,
+				3B9E180B2AAB5D1800856A2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E18122AAB5D1800856A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E181C2AAB5D1800856A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9E17F72AAB5D1700856A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E17FF2AAB5D1700856A2C /* AppDelegate.swift in Sources */,
+				3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */,
+				3B9E18092AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld in Sources */,
+				3B9E18012AAB5D1700856A2C /* SceneDelegate.swift in Sources */,
+				3B0FFA482AAF440900D153E6 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E18102AAB5D1800856A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E18192AAB5D1800856A2C /* kakaoMapTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9E181A2AAB5D1800856A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E18232AAB5D1800856A2C /* kakaoMapTestUITests.swift in Sources */,
+				3B9E18252AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B9E18162AAB5D1800856A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B9E17FA2AAB5D1700856A2C /* kakaoMapTest */;
+			targetProxy = 3B9E18152AAB5D1800856A2C /* PBXContainerItemProxy */;
+		};
+		3B9E18202AAB5D1800856A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B9E17FA2AAB5D1700856A2C /* kakaoMapTest */;
+			targetProxy = 3B9E181F2AAB5D1800856A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B9E180C2AAB5D1800856A2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9E180D2AAB5D1800856A2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9E18262AAB5D1800856A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B9E18272AAB5D1800856A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9E18292AAB5D1800856A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kakaoMapTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B9E182A2AAB5D1800856A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kakaoMapTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B9E182C2AAB5D1800856A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kakaoMapTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kakaoMapTest";
+			};
+			name = Debug;
+		};
+		3B9E182D2AAB5D1800856A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kakaoMapTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kakaoMapTest";
+			};
+			name = Release;
+		};
+		3B9E182F2AAB5D1800856A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kakaoMapTest;
+			};
+			name = Debug;
+		};
+		3B9E18302AAB5D1800856A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB7A6642AB05FA500428A8C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SN5J3DYFX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJ.kakaoMapTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kakaoMapTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B9E17F62AAB5D1700856A2C /* Build configuration list for PBXProject "kakaoMapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9E18262AAB5D1800856A2C /* Debug */,
+				3B9E18272AAB5D1800856A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9E18282AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9E18292AAB5D1800856A2C /* Debug */,
+				3B9E182A2AAB5D1800856A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9E182B2AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9E182C2AAB5D1800856A2C /* Debug */,
+				3B9E182D2AAB5D1800856A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9E182E2AAB5D1800856A2C /* Build configuration list for PBXNativeTarget "kakaoMapTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9E182F2AAB5D1800856A2C /* Debug */,
+				3B9E18302AAB5D1800856A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B9E18312AAB5E1B00856A2C /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B9E18322AAB5E1B00856A2C /* KakaoMapsSDK_SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B9E18312AAB5E1B00856A2C /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = KakaoMapsSDK_SPM;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3B9E18072AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B9E18082AAB5D1700856A2C /* kakaoMapTest.xcdatamodel */,
+			);
+			currentVersion = 3B9E18082AAB5D1700856A2C /* kakaoMapTest.xcdatamodel */;
+			path = kakaoMapTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B9E17F32AAB5D1700856A2C /* Project object */;
+}
