@@ -8,14 +8,23 @@
 import Foundation
 import UIKit
 
+
 extension UIColor {
-    public convenience init(hex: UInt32) {
-        let r, g, b, a: CGFloat
-        r = CGFloat((hex & 0xff000000) >> 24) / 255.0
-        g = CGFloat((hex & 0x00ff0000) >> 16) / 255.0
-        b = CGFloat((hex & 0x0000ff00) >> 8) / 255.0
-        a = CGFloat((hex & 0x000000ff)) / 255.0
+    convenience init(hexCode: String, alpha: CGFloat = 1.0) {
+        var hexFormatted: String = hexCode.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         
-        self.init(red: r, green: g, blue: b, alpha: a)
+        if hexFormatted.hasPrefix("#") {
+            hexFormatted = String(hexFormatted.dropFirst())
+        }
+        
+        assert(hexFormatted.count == 6, "Invalid hex code used.")
+        
+        var rgbValue: UInt64 = 0
+        Scanner(string: hexFormatted).scanHexInt64(&rgbValue)
+        
+        self.init(red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+                  green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+                  blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+                  alpha: alpha)
     }
 }

@@ -133,29 +133,31 @@ final class ViewController: UIViewController{
         let mapView = mapController?.getView("mapview") as? KakaoMap
         let manager = mapView?.getRouteManager()
         let _ = manager?.addRouteLayer(layerID: "RouteLayer", zOrder: 0)
-        let patternImages = [UIImage(named: "9"), UIImage(named: "8"), UIImage(named: "7")]
+        let patternImages = [UIImage(named: "route_pattern_arrow.png"), UIImage(named: "route_pattern_walk.png"), UIImage(named: "route_pattern_long_dot.png")]
         
         // pattern
-        let styleSet = RouteStyleSet(styleID: "routeStyleSet1")
+        let styleSet = RouteStyleSet(styleID: "routeStyleSet4")
         styleSet.addPattern(RoutePattern(pattern: patternImages[0]!, distance: 60, symbol: nil, pinStart: false, pinEnd: false))
         styleSet.addPattern(RoutePattern(pattern: patternImages[1]!, distance: 6, symbol: nil, pinStart: true, pinEnd: true))
-        styleSet.addPattern(RoutePattern(pattern: patternImages[2]!, distance: 6, symbol: UIImage(named: "6")!, pinStart: true, pinEnd: true))
+        styleSet.addPattern(RoutePattern(pattern: patternImages[2]!, distance: 6, symbol: UIImage(named: "route_pattern_long_airplane.png")!, pinStart: true, pinEnd: true))
         
-        let colors = [ UIColor(hex: 0x7796ffff),
-                       UIColor(hex: 0x343434ff),
-                       UIColor(hex: 0x3396ff00),
-                       UIColor(hex: 0xee63ae00) ]
+        let colors = [
+            UIColor(hexCode: "ff0000"),
+            UIColor(hexCode: "00ff00"),
+            UIColor(hexCode: "0000ff"),
+            UIColor(hexCode: "ffff00") ]
 
-        let strokeColors = [ UIColor(hex: 0xffffffff),
-                             UIColor(hex: 0xffffffff),
-                             UIColor(hex: 0xffffff00),
-                             UIColor(hex: 0xffffff00) ]
+        let strokeColors = [
+            UIColor(hexCode: "ffffff"),
+            UIColor(hexCode: "ddffdd"),
+            UIColor(hexCode: "00ddff"),
+            UIColor(hexCode: "ffffdd") ]
             
         let patternIndex = [-1, 0, 1, 2]
         
         for index in 0 ..< colors.count {
             let routeStyle = RouteStyle(styles: [
-                PerLevelRouteStyle(width: 18, color: colors[index], strokeWidth: 4, strokeColor: strokeColors[index], level: 0, patternIndex: patternIndex[index])
+                PerLevelRouteStyle(width: 30, color: colors[index], strokeWidth: 4, strokeColor: strokeColors[index], level: 0, patternIndex: patternIndex[index])
             ])
  
             styleSet.addStyle(routeStyle)
@@ -179,25 +181,34 @@ final class ViewController: UIViewController{
             styleIndex = (styleIndex + 1) % 4
         }
         
-        let options = RouteOptions(routeID: "routes", styleID: "routeStyleSet1", zOrder: 0)
+        let options = RouteOptions(routeID: "routes", styleID: "routeStyleSet4", zOrder: 0)
         options.segments = segments
         let route = layer?.addRoute(option: options)
         route?.show()
         
         let pnt = segments[0].points[0]
-        mapView.moveCamera(CameraUpdate.make(target: pnt, zoomLevel: 15, mapView: mapView))
+        mapView.moveCamera(CameraUpdate.make(target: pnt, zoomLevel: 8, mapView: mapView))
     }
     
+    /// 위도 경도를 이용하여 point를 찍음
     func routeSegmentPoints() -> [[MapPoint]] {
         var segments = [[MapPoint]]()
         
         var points = [MapPoint]()
+        points.append(MapPoint(longitude: 127.1059968,
+                               latitude: 37.3597093))
         points.append(MapPoint(longitude: 127.1058342,
                                latitude: 37.3597078))
+        
+        segments.append(points)
+        
+        points = [MapPoint]()   // 따로 표시가 됨
         points.append(MapPoint(longitude: 129.0759853,
                                latitude: 35.1794697))
-        points.append(MapPoint(longitude: 127.1058342,
-                               latitude: 37.3597078))
+        points.append(MapPoint(longitude: 129.0764276,
+                               latitude: 35.1795108))
+        points.append(MapPoint(longitude: 129.0762855,
+                               latitude: 35.1793188))
         segments.append(points)
         return segments
     }

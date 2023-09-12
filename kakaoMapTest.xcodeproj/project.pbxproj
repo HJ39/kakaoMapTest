@@ -18,6 +18,8 @@
 		3B9E18252AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */; };
 		3B9E18332AAB5E1B00856A2C /* KakaoMapsSDK_SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9E18322AAB5E1B00856A2C /* KakaoMapsSDK_SPM */; };
 		3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6622AB05C7300428A8C /* Extensions.swift */; };
+		3BB7A6662AB09E4600428A8C /* APISampleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6652AB09E4600428A8C /* APISampleBaseViewController.swift */; };
+		3BB7A6682AB09E9600428A8C /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6672AB09E9600428A8C /* A.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BB7A6622AB05C7300428A8C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3BB7A6642AB05FA500428A8C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3BB7A6652AB09E4600428A8C /* APISampleBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISampleBaseViewController.swift; sourceTree = "<group>"; };
+		3BB7A6672AB09E9600428A8C /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				3B9E17FE2AAB5D1700856A2C /* AppDelegate.swift */,
 				3B9E18002AAB5D1700856A2C /* SceneDelegate.swift */,
 				3B0FFA472AAF440900D153E6 /* ViewController.swift */,
+				3BB7A6652AB09E4600428A8C /* APISampleBaseViewController.swift */,
+				3BB7A6672AB09E9600428A8C /* A.swift */,
 				3BB7A6622AB05C7300428A8C /* Extensions.swift */,
 				3B9E180A2AAB5D1800856A2C /* Assets.xcassets */,
 				3B9E180C2AAB5D1800856A2C /* LaunchScreen.storyboard */,
@@ -270,11 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB7A6662AB09E4600428A8C /* APISampleBaseViewController.swift in Sources */,
 				3B9E17FF2AAB5D1700856A2C /* AppDelegate.swift in Sources */,
 				3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */,
 				3B9E18092AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld in Sources */,
 				3B9E18012AAB5D1700856A2C /* SceneDelegate.swift in Sources */,
 				3B0FFA482AAF440900D153E6 /* ViewController.swift in Sources */,
+				3BB7A6682AB09E9600428A8C /* A.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
