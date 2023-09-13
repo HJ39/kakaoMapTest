@@ -8,7 +8,7 @@
 import UIKit
 import KakaoMapsSDK
 
-class APISampleBaseViewController: UIViewController, MapControllerDelegate {
+class KakaoMapViewController: UIViewController, MapControllerDelegate {
     
     var mapController: KMController?
     var _observerAdded: Bool?

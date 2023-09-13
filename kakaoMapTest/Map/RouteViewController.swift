@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import KakaoMapsSDK
 
-final class A: APISampleBaseViewController {
+final class RouteViewController: KakaoMapViewController {
     
     override func addViews() {
-        let defaultPosition: MapPoint = MapPoint(longitude: 126.978365, latitude: 37.566691)
+        let defaultPosition: MapPoint = MapPoint(longitude: 126.7335293, latitude: 37.3401906)
         let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition)
         
         if mapController?.addView(mapviewInfo) == Result.OK {
@@ -21,6 +21,8 @@ final class A: APISampleBaseViewController {
             createRouteline()
         }
     }
+    
+    // MARK: - Route
     
     // RouteStyleSet을 생성한다.
     // 전체 구성은 PolylineStyleSet과 같다.
@@ -92,21 +94,21 @@ final class A: APISampleBaseViewController {
         var segments = [[MapPoint]]()
         
         var points = [MapPoint]()
-        points.append(MapPoint(longitude: 127.1059968,
-                               latitude: 37.3597093))
-        points.append(MapPoint(longitude: 127.1058342,
-                               latitude: 37.3597078))
+        points.append(MapPoint(longitude: 126.7335293,
+                               latitude: 37.3401906))
+        points.append(MapPoint(longitude: 126.7323429,
+                               latitude: 37.3416939))
         
         segments.append(points)
         
-        points = [MapPoint]()   // 따로 표시가 됨
-        points.append(MapPoint(longitude: 129.0759853,
-                               latitude: 35.1794697))
-        points.append(MapPoint(longitude: 129.0764276,
-                               latitude: 35.1795108))
-        points.append(MapPoint(longitude: 129.0762855,
-                               latitude: 35.1793188))
-        segments.append(points)
+//        points = [MapPoint]()   // 따로 표시가 됨
+//        points.append(MapPoint(longitude: 129.0759853,
+//                               latitude: 35.1794697))
+//        points.append(MapPoint(longitude: 129.0764276,
+//                               latitude: 35.1795108))
+//        points.append(MapPoint(longitude: 129.0762855,
+//                               latitude: 35.1793188))
+//        segments.append(points)
         return segments
     }
     
