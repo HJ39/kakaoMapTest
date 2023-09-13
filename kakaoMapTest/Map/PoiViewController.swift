@@ -12,37 +12,37 @@ import KakaoMapsSDK
 final class PoiViewController: KakaoMapViewController {
     
     override func addViews() {
-        let defaultPosition: MapPoint = MapPoint(longitude: 126.7335293, latitude: 37.3401906)
+        let defaultPosition: MapPoint = MapPoint(longitude: 126.7335293, latitude: 37.3401906)  // 지도 빌드 될 때 보여줄 장소
         let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition)
         
         if mapController?.addView(mapviewInfo) == Result.OK {
             print("OK")
             createLabelLayer()
-            createPoiStyle()
-            createPois()
         }
     }
     
     
     // MARK: - Poi
     
-    // POI가 속할 LabelLayer를 생성한다.
+    /// POI가 속할 LabelLayer를 생성
     func createLabelLayer() {
         guard let view = mapController?.getView("mapview") as? KakaoMap else { return }
         let manager = view.getLabelManager()    //LabelManager를 가져온다. LabelLayer는 LabelManger를 통해 추가할 수 있다.
         
         let layerOption = LabelLayerOptions(layerID: "PoiLayer", competitionType: .none, competitionUnit: .poi, orderType: .rank, zOrder: 10001)
         let _ = manager.addLabelLayer(option: layerOption)
+        createPoiStyle()
     }
     
     func createPoiStyle() {
         guard let view = mapController?.getView("mapview") as? KakaoMap else { return }
         let manager = view.getLabelManager()
 
-        let iconStyle = PoiIconStyle(symbol: UIImage(named: "route_pattern_long_dot.png"), anchorPoint: CGPoint(x: 0.0, y: 0.0))
+        let iconStyle = PoiIconStyle(symbol: UIImage(named: "route_pattern_long_dot.png")?.resize(newWidth: 30, newHeight: 30), anchorPoint: CGPoint(x: 0.0, y: 0.0))
         let perLevelStyle = PerLevelPoiStyle(iconStyle: iconStyle, level: 0)  // 이 스타일이 적용되기 시작할 레벨.
         let poiStyle = PoiStyle(styleID: "customStyle1", styles: [perLevelStyle])
         manager.addPoiStyle(poiStyle)
+        createPois()
     }
     
     // POI를 생성한다.
@@ -54,7 +54,9 @@ final class PoiViewController: KakaoMapViewController {
         poiOption.rank = 0
         
         let poi1 = layer?.addPoi(option: poiOption, at: MapPoint(longitude: 126.7335293, latitude: 37.3401906), callback: nil)
+        let poi2 = layer?.addPoi(option: poiOption, at: MapPoint(longitude: 126.7323429, latitude: 37.3416939), callback: nil)
         poi1?.show()
+        poi2?.show()
     }
     
     

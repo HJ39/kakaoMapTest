@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import KakaoMapsSDK
 
+/// 상속 받지 않고 지도 구현
 final class ViewController: UIViewController{
     var _observerAdded: Bool?
     var _auth: Bool?

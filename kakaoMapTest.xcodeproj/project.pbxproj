@@ -17,12 +17,14 @@
 		3B9E18232AAB5D1800856A2C /* kakaoMapTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18222AAB5D1800856A2C /* kakaoMapTestUITests.swift */; };
 		3B9E18252AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */; };
 		3B9E18332AAB5E1B00856A2C /* KakaoMapsSDK_SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9E18322AAB5E1B00856A2C /* KakaoMapsSDK_SPM */; };
-		3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6622AB05C7300428A8C /* Extensions.swift */; };
+		3BB7A6632AB05C7300428A8C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6622AB05C7300428A8C /* UIColor.swift */; };
 		3BB7A6662AB09E4600428A8C /* KakaoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6652AB09E4600428A8C /* KakaoMapViewController.swift */; };
 		3BB7A6682AB09E9600428A8C /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7A6672AB09E9600428A8C /* RouteViewController.swift */; };
 		3BF9EFA62AB1D65C0014855E /* PoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EFA52AB1D65C0014855E /* PoiViewController.swift */; };
 		3BF9EFA82AB1D6AD0014855E /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EFA72AB1D6AD0014855E /* SelectViewController.swift */; };
 		3BF9EFAA2AB1D8D40014855E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EFA92AB1D8D40014855E /* List.swift */; };
+		3BF9EFAF2AB1DCE80014855E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EFAE2AB1DCE80014855E /* UIImage.swift */; };
+		3BF9EFB32AB1E9EA0014855E /* PolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9EFB22AB1E9EA0014855E /* PolygonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +58,15 @@
 		3B9E181E2AAB5D1800856A2C /* kakaoMapTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kakaoMapTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9E18222AAB5D1800856A2C /* kakaoMapTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestUITests.swift; sourceTree = "<group>"; };
 		3B9E18242AAB5D1800856A2C /* kakaoMapTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoMapTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3BB7A6622AB05C7300428A8C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3BB7A6622AB05C7300428A8C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3BB7A6642AB05FA500428A8C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3BB7A6652AB09E4600428A8C /* KakaoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapViewController.swift; sourceTree = "<group>"; };
 		3BB7A6672AB09E9600428A8C /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		3BF9EFA52AB1D65C0014855E /* PoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiViewController.swift; sourceTree = "<group>"; };
 		3BF9EFA72AB1D6AD0014855E /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		3BF9EFA92AB1D8D40014855E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		3BF9EFAE2AB1DCE80014855E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		3BF9EFB22AB1E9EA0014855E /* PolygonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +118,11 @@
 		3B9E17FD2AAB5D1700856A2C /* kakaoMapTest */ = {
 			isa = PBXGroup;
 			children = (
-				3BF9EFA92AB1D8D40014855E /* List.swift */,
-				3BB7A6622AB05C7300428A8C /* Extensions.swift */,
 				3BF9EFAC2AB1D9400014855E /* Delegate */,
 				3BF9EFAB2AB1D9390014855E /* Map */,
+				3BF9EFA92AB1D8D40014855E /* List.swift */,
+				3BF9EFAD2AB1DC490014855E /* Extensions */,
+				3BF9EFA72AB1D6AD0014855E /* SelectViewController.swift */,
 				3B9E180A2AAB5D1800856A2C /* Assets.xcassets */,
 				3B9E180C2AAB5D1800856A2C /* LaunchScreen.storyboard */,
 				3B9E180F2AAB5D1800856A2C /* Info.plist */,
@@ -150,8 +155,8 @@
 				3B0FFA472AAF440900D153E6 /* ViewController.swift */,
 				3BB7A6652AB09E4600428A8C /* KakaoMapViewController.swift */,
 				3BB7A6672AB09E9600428A8C /* RouteViewController.swift */,
-				3BF9EFA72AB1D6AD0014855E /* SelectViewController.swift */,
 				3BF9EFA52AB1D65C0014855E /* PoiViewController.swift */,
+				3BF9EFB22AB1E9EA0014855E /* PolygonViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				3B9E18002AAB5D1700856A2C /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3BF9EFAD2AB1DC490014855E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BB7A6622AB05C7300428A8C /* UIColor.swift */,
+				3BF9EFAE2AB1DCE80014855E /* UIImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB7A6662AB09E4600428A8C /* KakaoMapViewController.swift in Sources */,
+				3BF9EFAF2AB1DCE80014855E /* UIImage.swift in Sources */,
 				3BF9EFA62AB1D65C0014855E /* PoiViewController.swift in Sources */,
 				3B9E17FF2AAB5D1700856A2C /* AppDelegate.swift in Sources */,
 				3BF9EFAA2AB1D8D40014855E /* List.swift in Sources */,
-				3BB7A6632AB05C7300428A8C /* Extensions.swift in Sources */,
+				3BF9EFB32AB1E9EA0014855E /* PolygonViewController.swift in Sources */,
+				3BB7A6632AB05C7300428A8C /* UIColor.swift in Sources */,
 				3B9E18092AAB5D1700856A2C /* kakaoMapTest.xcdatamodeld in Sources */,
 				3B9E18012AAB5D1700856A2C /* SceneDelegate.swift in Sources */,
 				3B0FFA482AAF440900D153E6 /* ViewController.swift in Sources */,

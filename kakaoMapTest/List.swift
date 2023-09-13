@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct List {
-    static let viewControllersName: [String] = ["Route","Poi"]
-    static let viewControllers: [UIViewController] = [RouteViewController(), PoiViewController()]
+    static let viewControllersName: [String] = ["Route","Poi","PolyGon"]
+    static let viewControllers: [UIViewController] = [RouteViewController(), PoiViewController(),PolyGonViewController()]
 }
